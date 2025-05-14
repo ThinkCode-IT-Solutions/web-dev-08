@@ -2,15 +2,23 @@
     echo "<h1>Operators in PHP</h1>";
 /**
  * 4 Types of Operators
- * Arithematics operator (+,-,/,*,%)
+ * Arithematics operator (+,-,/,*,%) 
+ * (produce a new value)
  * Camparison operator (<,>,>=,<=,==,===,!=)
  * Assignment operator (=,+=,-=,*=,/=)
  * Logical operator (&&, ||, !)
  * 
  * Note: precedence 
  * 1: arithmatics
+ * 2: camparison 
+ * 3: logical operator
+ * 4: assignment
  * 
  */
+
+ $something = 1 + 2 < 45 && 1 < 2;
+ $something =   3   < 45 && true;
+ $something =  true;
 
 // ! Arithmatic operator
 $num1 = 35;
