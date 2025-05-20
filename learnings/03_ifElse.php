@@ -11,27 +11,27 @@ $license = false;
  */
 
 
- if($age > 0 && $age < 18 ){
+if ($age > 0 && $age < 18) {
 
-    if($license){
+    if ($license) {
         echo "you can drive but with care";
-    }else{
+    } else {
         echo "you cannot drive because you are underage";
     }
     // cannot drive
- }else if ($age > 17 && $age < 80){
-    if($license){
+} else if ($age > 17 && $age < 80) {
+    if ($license) {
         echo "you can legally drive";
-    }else{
+    } else {
         echo "you can drive but with a license";
     }
- }else if($age >= 80){
-    if($license){
+} else if ($age >= 80) {
+    if ($license) {
         echo "you can legally drive but you should not take care of your health";
-    }else{
+    } else {
         echo "you cannot drive";
     }
- }else {
+} else {
     // default
     echo "Invalid input";
- }
+}
